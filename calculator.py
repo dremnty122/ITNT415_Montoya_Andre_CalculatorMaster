@@ -15,12 +15,15 @@ def print_menu():
     print("5. Exit")
     print("==============================")
 def add(a, b):
-    return a + b
+ return a + b
 def main():
     while True:
         print_menu()
         choice = input("Select an option (1-5): ").strip()
  
+        if choice == "5":
+            print("Exiting Calculator Master. Goodbye!")
+            break
         if choice == "1":
             num1 = get_number("Enter the first number: ")
             num2 = get_number("Enter the second number: ")
